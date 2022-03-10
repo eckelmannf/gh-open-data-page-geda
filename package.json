@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "deploy": "ng deploy --repo=https://github.com/whoohoo86/dummyDataRepo.git --base-href=/dummyDataRepo/",
+    "deploy": "ng deploy --repo=https://github.com/eckelmannf/gh-open-data-page-geda.git --base-href=/gh-open-data-page-geda/",
     "test": "ng test"
   },
   "private": true,

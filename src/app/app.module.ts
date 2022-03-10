@@ -55,6 +55,7 @@ import { EmbedPageComponent } from './pages/embed-page/embed-page.component';
 import { DatasourceCardComponent } from './components/datasource-card/datasource-card.component';
 import { DatasourceLinksComponent } from './components/datasource-links/datasource-links.component';
 import { BaseHrefPipe } from './pipes/base-href.pipe';
+import { TableauDashboardEmbedComponent } from './components/tableau-dashboard-embed/tableau-dashboard-embed.component';
 
 registerLocaleData(localeDe, 'de');
 
@@ -110,7 +111,8 @@ function getBaseHref(platformLocation: PlatformLocation): string {
     EmbedPageComponent,
     DatasourceCardComponent,
     DatasourceLinksComponent,
-    BaseHrefPipe
+    BaseHrefPipe,
+    TableauDashboardEmbedComponent
   ],
   imports: [
     BrowserAnimationsModule,

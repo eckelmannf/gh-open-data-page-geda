@@ -1,0 +1,15 @@
+:host {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -140px;
+
+    & > div {
+        max-width: 100%;
+
+        iframe {
+            transform: scale(0.85);
+            transform-origin: top left;
+        }
+    }
+}

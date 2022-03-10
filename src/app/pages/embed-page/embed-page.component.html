@@ -5,4 +5,7 @@
     <ng-container *ngIf="content==='files'">
         <app-datasource-content-list [datasource]="datasource"> </app-datasource-content-list>
     </ng-container>
+    <ng-container *ngIf="content==='dashboard'">
+        <app-tableau-dashboard-embed [dashboardUrl]="'lala'"></app-tableau-dashboard-embed>
+    </ng-container>
 </div>

@@ -13,7 +13,7 @@ export class EmbedPageComponent implements OnInit, OnDestroy {
 
   readonly datasource = this.datasourceService.getDatasource();
 
-  readonly contentTypes = ['card', 'files'];
+  readonly contentTypes = ['card', 'files', 'dashboard'];
   content: string = 'card';
   private routeParamSub?: Subscription;
 
