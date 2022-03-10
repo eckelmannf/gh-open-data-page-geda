@@ -30,6 +30,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatSortModule } from '@angular/material/sort';
 import { CsvTableComponent } from './components/csv-table/csv-table.component';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
@@ -133,6 +134,7 @@ function getBaseHref(platformLocation: PlatformLocation): string {
     MatTreeModule,
     MatButtonModule,
     MatTableModule,
+    MatTabsModule,
     ClipboardModule,
     MatMenuModule,
     MatFormFieldModule,

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { DatasourceService } from 'src/app/services/datasource.service';
 
 @Component({
@@ -9,8 +12,12 @@ import { DatasourceService } from 'src/app/services/datasource.service';
 export class HomePageComponent implements OnInit {
 
   readonly datasource = this.datasourceService.getDatasource();
+  showTabs$ = of(false);
 
-  constructor(private datasourceService: DatasourceService){
+  constructor(private datasourceService: DatasourceService, private activeRoute: ActivatedRoute){
+    this.showTabs$ = this.activeRoute.queryParamMap.pipe(map(x => {
+      return x.has('tabs');
+    }))
   }
   ngOnInit(): void {
   }
